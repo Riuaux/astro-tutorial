@@ -1,0 +1,19 @@
+---
+import Navigation from "./Navigation.astro";
+
+const pages = ["home", "about", "blog"];
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<header>
+  <nav>
+    {pages.map((page) => <Navigation page={page} />)}
+  </nav>
+</header>
