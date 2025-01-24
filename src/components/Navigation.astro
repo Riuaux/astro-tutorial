@@ -1,7 +1,8 @@
 ---
-const { page } = Astro.props;
+// const { page } = Astro.props;
+const pages = ["home", "about", "blog"];
 ---
 
 <div class="nav-links">
-  {page && <a href={page == "home" ? "/" : `/${page}/`}>{page}</a>}
+  {pages.map((page) => <a href={page == "home" ? "/" : `/${page}/`}>{page}</a>)}
 </div>

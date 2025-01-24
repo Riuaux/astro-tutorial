@@ -1,7 +1,6 @@
 ---
+import Hamburger from "./Hamburger.astro";
 import Navigation from "./Navigation.astro";
-
-const pages = ["home", "about", "blog"];
 ---
 
 <style>
@@ -14,6 +13,7 @@ const pages = ["home", "about", "blog"];
 
 <header>
   <nav>
-    {pages.map((page) => <Navigation page={page} />)}
+    <Hamburger />
+    <Navigation />
   </nav>
 </header>
